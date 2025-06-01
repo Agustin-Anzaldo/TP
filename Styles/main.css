@@ -1,34 +1,197 @@
 * {
   margin: 0px;
   padding: 0px;
+  color: rgb(255, 255, 255);
 }
 
+h2,
+h3,
+h4,
+p {
+  font-size: 20px;
+}
+
+p {
+  font-family: "Montserrat";
+}
+
+
+/* Presentación */
+
 .presentation {
-  background-color: rgb(119, 119, 119);
+  background-color: rgba(56, 102, 52, 0.781);
+  height: 40vh;
+  width: 100%;
+  display: flex;
   text-align: center;
+  align-items: center;
+  place-content: center;
+  background-image: url(../assets/images/fondo.jpg);
+  background-size: cover;
 }
 
 .about-me {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  height: 50vh;
+  width: 600px;
 }
 
-h2 {
-  font-size: 35px;
+.presentation h3 {
+  font-size: 50px;
   padding-top: 15px;
+  color: rgb(255, 255, 90);
 }
 
-.nombre h3 {
+.nombre h4 {
   font-size: 40px;
+  font-family: "Roboto Mono";
+
 }
 
 .descripcion {
-  text-align: left;
+  text-align: center;
 }
 
 .presentation a img {
   width: 35px;
+}
+
+/* Proyectos */
+
+.proyects {
+  background-color: rgb(46, 46, 46);
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.proyects h2 {
+  color: rgb(38, 42, 255);
+  padding-bottom: 20px;
+  font-family: "Oswald";
+}
+
+.proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.proyecto {
+  background-image: url(../assets/images/fondo-de-grillajpg.jpg);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  gap: 20spx;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 4px 6px 9px -3px rgba(0, 0, 0, 0.75);
+  margin-bottom: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.proyecto img {
+  width: 250px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+/* Studies */
+
+.studies {
+  background-color: rgb(46, 46, 46);
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+
+}
+
+.studies h2 {
+  color: rgb(38, 42, 255);
+  padding-bottom: 20px;
+  font-family: "Oswald";
+}
+
+.titulos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 15px;
+}
+
+.titulo {
+  border-radius: 20px;
+  width: 450px;
+  height: 100px;
+  background-color: rgb(110, 110, 110);
+  box-shadow: 4px 6px 9px -3px rgba(0, 0, 0, 0.75);
+  margin-bottom: 20px;
+  text-align: center;
+  align-items: center;
+  place-content: center;
+}
+
+
+/* Skills */
+
+.skills {
+  background-color: rgb(46, 46, 46);
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.skills h2 {
+  color: rgb(38, 42, 255);
+  padding-bottom: 20px;
+  font-family: "Oswald";
+}
+
+.skills h3 {
+  padding-bottom: 10px;
+}
+
+.habilidades {
+  background-color: aliceblue;
+}
+
+.habilidad {
+  border-radius: 20px;
+  width: 70px;
+  height: 70px;
+  display: inline;
+  place-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.habilidad {
+  padding: 5px;
+}
+
+.habilidad img {
+  width: 50px;
+  height: 50px;
+}
+
+
+
+/* Footer */
+
+footer {
+  background-color: black;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+footer table {
+  width: 100%;
+}
+
+footer table td,
+th {
+  text-align: left;
+  padding: 8px;
 }
